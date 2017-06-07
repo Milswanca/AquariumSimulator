@@ -1,0 +1,7 @@
+# Unity generated
+Library/
+Temp/
+*.userprefs
+*.swatch
+ProjectSettings/AudioManager.asset
+ProjectSettings/GraphicsSettings.asset

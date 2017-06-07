@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SourceTreeAquariumGame", "SourceTreeAquariumGame.csproj", "{8BA12E49-69F3-8942-9D6E-78D2BF1E588C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SourceTreeAquariumGame.Editor", "SourceTreeAquariumGame.Editor.csproj", "{0C4B3D4F-0AA6-3DB4-EA2D-BD88D9A36DCB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8BA12E49-69F3-8942-9D6E-78D2BF1E588C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BA12E49-69F3-8942-9D6E-78D2BF1E588C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BA12E49-69F3-8942-9D6E-78D2BF1E588C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BA12E49-69F3-8942-9D6E-78D2BF1E588C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C4B3D4F-0AA6-3DB4-EA2D-BD88D9A36DCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C4B3D4F-0AA6-3DB4-EA2D-BD88D9A36DCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C4B3D4F-0AA6-3DB4-EA2D-BD88D9A36DCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C4B3D4F-0AA6-3DB4-EA2D-BD88D9A36DCB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
