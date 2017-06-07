@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using GameStatics;
 
 [System.Serializable]
 public class FPurchaseData
@@ -53,7 +54,19 @@ public class C_GameManager : MonoBehaviour
 {
 	public int Money;
 
-	public C_Aquarium CurrentAquarium { get; set; }
+	public C_Aquarium CurrentAquarium
+    {
+        get
+        {
+            if(Aquariums != null && Aquariums.IsValidIndex(currentAquariumIndex))
+            {
+                return Aquariums[currentAquariumIndex];
+            }
+
+            return null;
+        }
+    }
+
 	private int currentAquariumIndex;
 
 	[SerializeField]
@@ -117,6 +130,11 @@ public class C_GameManager : MonoBehaviour
 		C_Fish fish = CurrentAquarium.SpawnFish(Fish);
 		OnFishSpawnedDelegate (fish);
 	}
+
+    public void SpawnFood(GameObject Food)
+    {
+        C_Food fish = CurrentAquarium.SpawnFood(Food);
+    }
 
 	public void PurchaseItem(string itemName)
 	{
@@ -190,13 +208,17 @@ public class C_GameManager : MonoBehaviour
 
 	public void GoToNextAquarium()
 	{
-		currentAquariumIndex++;
-		CurrentAquarium = Aquariums [currentAquariumIndex];
-	}
+        if (Aquariums.IsValidIndex(currentAquariumIndex + 1))
+        {
+            currentAquariumIndex++;
+        }
+    }
 
-	public void GoToPreviousAquarium()
-	{
-		currentAquariumIndex--;
-		CurrentAquarium = Aquariums [currentAquariumIndex];
+    public void GoToPreviousAquarium()
+    {
+        if (Aquariums.IsValidIndex(currentAquariumIndex - 1))
+        {
+		    currentAquariumIndex--;
+        }
 	}
 }
