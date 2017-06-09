@@ -6,3 +6,9 @@ public interface I_Purchasable
 {
 	void OnPurchased();
 }
+
+public interface I_Savable
+{
+    FAquariumSaveData GetSaveData();
+    void LoadFromData(FAquariumSaveData saveData);
+}

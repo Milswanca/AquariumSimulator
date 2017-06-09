@@ -33,6 +33,6 @@ public class C_Food : MonoBehaviour, I_Purchasable
 	{
         gameManager = C_GameManager.Instance;
 
-        gameManager.SpawnFood(gameObject);
+        gameManager.CurrentAquarium.SpawnFood(gameObject);
 	}
 }
